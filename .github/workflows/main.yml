@@ -31,6 +31,7 @@ jobs:
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
+          file: Unity-CI-Pipeline.exe
           name: Unity-CI-Pipeline-${{ matrix.targetPlatform }}
           versioning: Semantic
           projectPath: Unity-CI-Pipeline
