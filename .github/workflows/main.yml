@@ -39,7 +39,7 @@ jobs:
         with:
           projectPath: Unity-CI-Pipeline
           unityVersion: auto
-          targetPlatform: StandaloneWindows64
+          targetPlatform: StandaloneWindows
 
       # Output
       - uses: actions/upload-artifact@v2
