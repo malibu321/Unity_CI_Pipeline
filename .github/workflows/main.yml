@@ -32,7 +32,7 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           buildName: Unity-CI-Pipeline
-          buildsPath: Unity-CI-Pipeline
+          buildsPath: Unity-CI-Pipeline/${{ matrix.targetPlatform }}
           #name: Unity-CI-Pipeline-${{ matrix.targetPlatform }}
           versioning: Semantic
           projectPath: Unity-CI-Pipeline
