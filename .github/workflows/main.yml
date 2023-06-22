@@ -17,7 +17,7 @@ jobs:
       - uses: actions/cache@v2
         with:
           path: Library
-          key: Library-${{ hashFiles('Unity CI Pipeline/Assets/**', 'Unity CI Pipeline/Packages/**', 'Unity CI Pipeline/ProjectSettings/**') }}
+          key: Library-${{ hashFiles('Unity-CI-Pipeline/Assets/**', 'Unity-CI-Pipeline/Packages/**', 'Unity-CI-Pipeline/ProjectSettings/**') }}
           restore-keys: |
             Library-
 
