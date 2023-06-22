@@ -32,12 +32,13 @@ jobs:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
         with:
           buildName: Unity-CI-Pipeline
-          buildsPath: build/Unity-CI-Pipeline
+          buildsPath: build
           #name: Unity-CI-Pipeline-${{ matrix.targetPlatform }}
           versioning: Semantic
           projectPath: Unity-CI-Pipeline
           targetPlatform: ${{ matrix.targetPlatform }}
       - uses: actions/upload-artifact@v2
         with:
+          feasdf: false
           name: Unity-CI-Pipeline-${{ matrix.targetPlatform }}
-          path: build/Unity-CI-Pipeline/${{ matrix.targetPlatform }}
+          path: build/${{ matrix.targetPlatform }}
